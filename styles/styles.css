@@ -1,32 +1,75 @@
-main {
-    max-width: 800px;
+/* General page style */
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    background-color: #f5f7fa;
+    color: #333;
 }
 
+/* Header */
+header {
+    background-color: #1f3c88;
+    padding: 15px 30px;
+}
+
+nav {
+    display: flex;
+    gap: 20px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+/* Main section */
+main {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: white;
+    border-radius: 6px;
+}
+
+/* Profile image */
+main img {
+    width: 150px;
+    height: auto;
+    border-radius: 8px;
+}
+
+/* Aside section */
 aside {
     width: 300px;
-    margin: 20px;
-    border: 1px solid #333;
-    padding: 10px;
-    background-color: #f4f4f4;
-    color: #333;
+    margin: 20px auto;
+    border: 1px solid #ddd;
+    padding: 15px;
+    background-color: #eef2f7;
+    border-radius: 6px;
 }
 
 aside img {
     width: 200px;
     height: auto;
+    border-radius: 6px;
 }
 
-main img {
-    width: 150px;
-    height: auto;
-}
-
+/* Paragraph */
 p {
     padding: 0;
+    line-height: 1.6;
 }
 
+/* Footer */
 footer {
-    margin-top: 15px;
-    border-top: 1px solid #000;
+    margin-top: 20px;
+    border-top: 1px solid #ccc;
     text-align: center;
+    padding: 15px;
+    background-color: #f0f0f0;
 }
