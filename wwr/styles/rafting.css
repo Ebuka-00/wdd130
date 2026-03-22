@@ -1,11 +1,8 @@
 /* Variables for color scheme and fonts */
 :root {
     --primary-color: #0275d8;
-    /* Blue for headings */
     --accent1-color: #f39c12;
-    /* Orange accent */
     --accent2-color: #2c3e50;
-    /* Dark accent */
     --body-font: Arial, sans-serif;
     --heading-font: 'Trebuchet MS', sans-serif;
 }
@@ -23,8 +20,33 @@ body {
     color: var(--accent2-color);
 }
 
-/* Center header, main, footer */
-header,
+/* Header Grid Layout */
+.site-header {
+    display: grid;
+    grid-template-columns: 200px 1fr;
+    align-items: center;
+    gap: 20px;
+    padding: 10px 0;
+}
+
+/* Nav Flex Layout */
+.site-nav {
+    display: flex;
+    justify-content: flex-end;
+    gap: 20px;
+}
+
+.site-nav a {
+    text-decoration: none;
+    color: var(--accent2-color);
+    font-weight: bold;
+}
+
+.site-nav a:hover {
+    color: var(--accent1-color);
+}
+
+/* Center main and footer */
 main,
 footer {
     width: 840px;
@@ -91,10 +113,60 @@ article {
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
 }
 
-/* Footer social media */
+/* History Section */
+.history-content {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    margin: 20px 0;
+}
+
+.history-content img {
+    width: 300px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+}
+
+/* Adventures Section */
+.adventure-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap: 10px;
+    margin: 20px 0;
+}
+
+.adventure-grid figure {
+    margin: 0;
+    text-align: center;
+}
+
+.adventure-grid img {
+    width: 100%;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+}
+
+.adventure-grid figcaption {
+    margin-top: 8px;
+    font-weight: bold;
+    color: var(--accent2-color);
+}
+
+/* Footer */
+footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 0;
+}
+
+.socialmedia {
+    display: flex;
+    gap: 10px;
+}
+
 .socialmedia a {
     text-decoration: none;
-    margin-right: 10px;
 }
 
 .socialmedia img {
