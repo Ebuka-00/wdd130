@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+      content="Contact Wild Rapids Rafting for reservations, inquiries, and adventure planning.">
+    <meta name="author" content="Your Full Name">
+    <title>Contact Us – Wild Rapids Rafting</title>
+    <link rel="stylesheet" href="styles/rafting.css">
+</head>
+
+<body>
+
+    <!-- Header -->
+    <header class="site-header">
+        <div class="logo-container">
+            <img src="images/logo1.jpg" alt="White Water Rafting Logo" id="logo">
+        </div>
+        <nav class="site-nav">
+            <a href="index.html">Home</a>
+            <a href="about.html">About Us</a>
+            <a href="trips.html">Trips</a>
+            <a href="contact.html">Contact Us</a>
+        </nav>
+    </header>
+
+    <!-- Main -->
+    <main>
+        <h1>Contact Us</h1>
+
+        <!-- Company Info -->
+        <section class="contact-info">
+            <h2>Company Information</h2>
+            <p><strong>Address:</strong> Lehi, Utah, USA</p>
+            <p><strong>Phone:</strong> +1-801-555-1234</p>
+            <p><strong>Email:</strong> info@wildrapids.com</p>
+
+            <!-- WORKING GOOGLE MAP -->
+            <iframe src="https://www.google.com/maps?q=Lehi,Utah&output=embed" loading="lazy">
+            </iframe>
+        </section>
+
+        <!-- Employees -->
+        <section class="employees">
+            <h2>Meet Our Team</h2>
+            <div class="employee-profiles">
+                <figure>
+                    <img src="images/rapids1.jpg" alt="John - Lead Guide">
+                    <figcaption>John – Lead Guide</figcaption>
+                </figure>
+                <figure>
+                    <img src="images/rapids2.jpg" alt="Sarah - Manager">
+                    <figcaption>Sarah – Operations Manager</figcaption>
+                </figure>
+                <figure>
+                    <img src="images/rapids3.jpg" alt="Mike - Instructor">
+                    <figcaption>Mike – Safety Instructor</figcaption>
+                </figure>
+            </div>
+        </section>
+
+        <!-- Contact Form -->
+        <section class="contact-form">
+            <h2>Send Us a Message</h2>
+
+            <form>
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+
+                <p><strong>Purpose of Message:</strong></p>
+                <label><input type="radio" name="purpose" value="general"> General Inquiry</label>
+                <label><input type="radio" name="purpose" value="reservation"> Reservation
+                    Question</label>
+                <label><input type="radio" name="purpose" value="suggestion"> Website
+                    Suggestion</label>
+
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" rows="5" required></textarea>
+
+                <label>
+                    <input type="checkbox" name="subscribe">
+                    Please subscribe me to the monthly newsletter
+                </label>
+
+                <button type="submit">Send Message</button>
+            </form>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2026 Wild Rapids Rafting Company | Your Full Name</p>
+        <nav class="socialmedia">
+            <a href="#"><img src="images/facebook.svg" alt="Facebook"></a>
+            <a href="#"><img src="images/x-bw.svg" alt="X"></a>
+            <a href="#"><img src="images/instagram-square.svg" alt="Instagram"></a>
+        </nav>
+    </footer>
+
+</body>
+
+</html>
