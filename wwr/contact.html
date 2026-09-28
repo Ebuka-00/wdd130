@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en-US">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us | Wild Rapids Rafting</title>
+    <meta name="description"
+      content="Contact Wild Rapids Rafting to ask questions, book a white water trip, or share feedback. Find our address, phone, email, map, and contact form.">
+    <meta name="author" content="Ebuka Prince Okubalu">
+    <link rel="stylesheet" href="styles/rafting.css">
+</head>
+
+<body>
+    <header>
+        <img src="images/logo.jpeg" alt="Wild Rapids Rafting logo" class="logo">
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="about.html">About Us</a>
+            <a href="trips.html">Trips</a>
+            <a href="contact.html" class="active">Contact Us</a>
+        </nav>
+    </header>
+
+    <main>
+        <h1>Contact Us</h1>
+
+        <div class="contact-top">
+            <section class="contact-info">
+                <h2>Get in Touch</h2>
+                <address>
+                    Wild Rapids Rafting<br>
+                    123 River Road<br>
+                    Salmon, ID 83467
+                </address>
+                <p>Phone: <a href="tel:+12085550123">(208) 555-0123</a></p>
+                <p>Toll free: <a href="tel:+18005550199">(800) 555-0199</a></p>
+                <p>Email: <a href="mailto:info@wildrapidsrafting.com">info@wildrapidsrafting.com</a>
+                </p>
+            </section>
+
+            <iframe title="Map showing the location of Wild Rapids Rafting"
+              src="https://www.google.com/maps?q=Salmon,+Idaho&amp;output=embed" width="360"
+              height="240" loading="lazy" allowfullscreen
+              referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+
+
+        <section class="contact-form">
+            <h2>Send Us a Message</h2>
+            <form action="#" method="post">
+                <p>
+                    <label for="name">Your name</label>
+                    <input type="text" id="name" name="name" required>
+                </p>
+
+                <p>
+                    <label for="email">Your email</label>
+                    <input type="email" id="email" name="email" required>
+                </p>
+
+                <fieldset>
+                    <legend>Purpose of your message</legend>
+                    <label>
+                        <input type="radio" name="purpose" value="general" checked> General Inquiry
+                    </label>
+                    <label>
+                        <input type="radio" name="purpose" value="reservation"> Reservation Question
+                    </label>
+                    <label>
+                        <input type="radio" name="purpose" value="suggestion"> Website Suggestion
+                    </label>
+                </fieldset>
+
+                <p>
+                    <label for="message">Your message</label>
+                    <textarea id="message" name="message" rows="6" required></textarea>
+                </p>
+
+                <p>
+                    <label>
+                        <input type="checkbox" name="newsletter" value="yes"> Please subscribe me to
+                        the monthly newsletter
+                    </label>
+                </p>
+
+                <button type="submit">Send Message</button>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy;2026 Wild Rapids Rafting &middot; Ebuka Prince Okubalu</p>
+        <nav class="socialmedia">
+            <a href="https://facebook.com" rel="noopener" target="_blank">
+                <img src="images/facebook.svg" alt="Facebook">
+            </a>
+            <a href="https://instagram.com" rel="noopener" target="_blank">
+                <img src="images/instagram.svg" alt="Instagram">
+            </a>
+            <a href="https://twitter.com" rel="noopener" target="_blank">
+                <img src="images/x-bw.svg" alt="Twitter">
+            </a>
+        </nav>
+    </footer>
+</body>
+
+</html>

@@ -18,7 +18,9 @@ body {
   color: var(--accent1-color);
 }
 
-header, main, footer {
+header,
+main,
+footer {
   width: 840px;
   margin: 0 auto;
 }
@@ -51,12 +53,16 @@ nav a:hover {
   text-decoration: underline;
 }
 
-h1, h2 {
+h1,
+h2 {
   font-family: var(--heading-font);
   color: var(--primary-color);
 }
 
-nav, p, section, article {
+nav,
+p,
+section,
+article {
   margin: 16px;
   padding: 8px;
 }
@@ -140,18 +146,21 @@ footer {
   border-radius: 6px;
 }
 
-.adventures {
+.adventures,
+.employees {
   text-align: center;
 }
 
-.adventures figure {
+.adventures figure,
+.employees figure {
   display: inline-block;
   width: 150px;
   margin: 8px;
   vertical-align: top;
 }
 
-.adventures img {
+.adventures img,
+.employees img {
   width: 150px;
   height: 110px;
   object-fit: cover;
@@ -159,8 +168,87 @@ footer {
   box-shadow: 1px 1px 4px rgb(0 0 0 / 0.3);
 }
 
-.adventures figcaption {
+.adventures figcaption,
+.employees figcaption {
   margin-top: 6px;
   font-size: 0.9rem;
   color: var(--accent1-color);
+}
+
+main > h1 {
+  text-align: center;
+  margin: 16px 0 0;
+}
+
+.contact-top {
+  display: grid;
+  grid-template-columns: 1fr auto;
+  gap: 16px;
+  align-items: start;
+}
+
+.contact-info address {
+  font-style: normal;
+  margin: 0 16px 8px;
+  padding: 0 8px;
+}
+
+.contact-info a {
+  color: var(--primary-color);
+}
+
+iframe {
+  max-width: 100%;
+  margin: 16px;
+  border-radius: 6px;
+}
+
+.contact-form form p,
+.contact-form fieldset {
+  margin: 0 0 16px;
+  padding: 0;
+}
+
+.contact-form fieldset {
+  padding: 12px;
+  border: 1px solid var(--secondary-color);
+  border-radius: 6px;
+}
+
+.contact-form label {
+  display: block;
+  margin-bottom: 4px;
+  font-weight: bold;
+}
+
+.contact-form fieldset label {
+  display: inline-block;
+  margin-right: 16px;
+  font-weight: normal;
+}
+
+.contact-form input[type="text"],
+.contact-form input[type="email"],
+.contact-form textarea {
+  width: 100%;
+  padding: 8px;
+  border: 1px solid var(--secondary-color);
+  border-radius: 4px;
+  font-family: var(--body-font);
+  font-size: 1rem;
+}
+
+.contact-form button {
+  padding: 10px 24px;
+  border: none;
+  border-radius: 4px;
+  background-color: var(--primary-color);
+  color: var(--accent2-color);
+  font-size: 1rem;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.contact-form button:hover {
+  background-color: var(--accent1-color);
 }
